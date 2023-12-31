@@ -3,7 +3,7 @@ import json, os, requests
 
 app = Flask(__name__)
 fruits_inventory = { 'apple': 1000, 'banana': 1000 }
-base_url = os.getenv('BASE_URL', 'http://localhost') + ':' + os.getenv('DAPR_HTTP_PORT', '3080')
+base_url = os.getenv('BASE_URL', 'http://localhost') + ':' + os.getenv('DAPR_HTTP_PORT', '8000')
 headers = {'dapr-app-id': 'webbackend', 'content-type': 'application/json'}
 
 @app.route('/orders', methods=['POST'])

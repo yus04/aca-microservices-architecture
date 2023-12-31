@@ -11,7 +11,7 @@ COPY . /app/
 RUN npm install
 
 # ポートの公開
-EXPOSE 8000
+EXPOSE 5000
 
 # expressサーバーの起動コマンド
 CMD ["npm", "start"]
